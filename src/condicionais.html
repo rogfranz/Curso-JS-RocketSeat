@@ -14,15 +14,25 @@
 
     function retornarSexo(sexo) {
 
-      if (sexo === 'M') {
-        return 'Masculino';
+      // if (sexo === 'M') {
+      //   return 'Masculino';
+      // }
+      // else if (sexo === 'F') {
+      //   return 'Feminino';
+      // }
+      // else {
+      //   return 'outro';
+      // }
+
+      switch (sexo) {
+        case 'M':
+          return 'Masculino';
+        case 'F':
+          return 'Feminino';
+        default:
+          return 'outro';
       }
-      else if (sexo === 'F') {
-        return 'Feminino';
-      }
-      else {
-        return 'outro';
-      }
+
     }
 
     var resultado = retornarSexo('C');
