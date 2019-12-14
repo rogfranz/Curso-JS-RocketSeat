@@ -10,16 +10,24 @@
     
     <script>
         var sexo = 'M';
-        var idade = 15;
+        var idade = 35;
 
-// operadores lógicos
-// AND = &&
-// OR  = ||
-// NOT = !=
+        // operadores lógicos
+        // AND = &&
+        // OR  = ||
+        // NOT = !=
+
+        var homemMaiorIdade;
 
         if (sexo === 'M' && idade >= 18) {
-            console.log("Homem maior de idade!")
+            homemMaiorIdade = true;
         }
+        else {
+            homemMaiorIdade = false;
+        }
+
+        console.log(homemMaiorIdade);
+
     </script>
 </body>
 </html>
