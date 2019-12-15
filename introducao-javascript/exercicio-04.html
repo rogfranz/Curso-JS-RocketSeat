@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 04</title>
+</head>
+
+<body>
+    <script>
+        function experiencia(anos) {
+
+            var retorno;
+
+            if (anos >= 0 && anos <= 1) {
+                retorno = 'Iniciante';
+            } else if (anos > 1 && anos <= 3) {
+                retorno = 'Intermediário';
+            } else if (anos > 3 && anos <= 6) {
+                retorno = 'Avançado';
+            } else {
+                retorno = 'Jedi Master';
+            }
+
+            return retorno;
+        }
+
+        var anosEstudo = 10;
+        var resultado = experiencia(anosEstudo);
+        console.log(resultado);
+    </script>
+</body>
+
+</html>
